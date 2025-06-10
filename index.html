@@ -3,248 +3,186 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Alexander - Portafolio Profesional</title>
-  <style>
-    /* Reset básico */
-    *, *::before, *::after {
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-      color: #f0f0f0;
-      margin: 0;
-      padding: 2rem 1rem;
-      max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
-      line-height: 1.6;
-    }
-    h1 {
-      text-align: center;
-      font-weight: 900;
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-      text-shadow: 0 0 10px rgba(255 255 255 / 0.3);
-    }
-    img.profile {
-      display: block;
-      margin: 1rem auto 2rem auto;
-      border-radius: 20px;
-      max-width: 280px;
-      width: 100%;
-      height: auto;
-      box-shadow:
-        0 4px 15px rgba(255 255 255 / 0.2),
-        0 0 40px #2a5298;
-      transition: transform 0.3s ease;
-      cursor: pointer;
-    }
-    img.profile:hover {
-      transform: scale(1.05) rotate(2deg);
-      box-shadow:
-        0 8px 30px rgba(255 255 255 / 0.4),
-        0 0 60px #1e3c72;
-    }
-    hr {
-      border: none;
-      border-top: 1px solid rgba(255 255 255 / 0.15);
-      margin: 2.5rem 0;
-      width: 100%;
-    }
-    section {
-      margin-bottom: 3rem;
-    }
-    h3 {
-      color: #ffd54f;
-      font-weight: 700;
-      font-size: 1.75rem;
-      border-left: 5px solid #ffd54f;
-      padding-left: 0.8rem;
-      margin-bottom: 1rem;
-      text-shadow: 0 0 5px rgba(255 213 79 / 0.7);
-    }
-    p {
-      font-size: 1.1rem;
-      color: #ddd;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    /* Badges */
-    .badges {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.8rem;
-      justify-content: center;
-      margin-top: 1rem;
-    }
-    .badges img {
-      height: 40px;
-      border-radius: 8px;
-      filter: drop-shadow(0 0 1px rgba(0,0,0,0.3));
-      transition: transform 0.3s ease, filter 0.3s ease;
-      cursor: default;
-    }
-    .badges img:hover {
-      transform: scale(1.15) rotate(3deg);
-      filter: drop-shadow(0 0 5px #ffd54f);
-    }
-
-    /* Ripple button style for LinkedIn */
-    .ripple-button {
-      position: relative;
-      overflow: hidden;
-      display: inline-block;
-      cursor: pointer;
-      border-radius: 10px;
-      box-shadow:
-        0 0 8px #0077b5aa;
-      transition: box-shadow 0.3s ease;
-    }
-    .ripple-button:hover {
-      box-shadow:
-        0 0 20px #ffd54f,
-        0 0 40px #0077b5cc;
-    }
-    .ripple-button img {
-      display: block;
-      height: 48px;
-      border-radius: 10px;
-    }
-
-    /* Ripple effect */
-    .ripple-button:after {
-      content: "";
-      position: absolute;
-      border-radius: 50%;
-      width: 100px;
-      height: 100px;
-      background: rgba(255, 213, 79, 0.4);
-      transform: scale(0);
-      opacity: 0;
-      pointer-events: none;
-      animation: ripple 0.6s linear;
-    }
-    .ripple-button:active:after {
-      transform: scale(1);
-      opacity: 1;
-      animation-name: ripple;
-    }
-    @keyframes ripple {
-      to {
-        opacity: 0;
-        transform: scale(2.5);
-      }
-    }
-
-    /* Responsive */
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2rem;
-      }
-      .badges img {
-        height: 30px;
-      }
-      .ripple-button img {
-        height: 40px;
-      }
-    }
-  </style>
+  <title>Alexander - Portfolio Profesional</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>👋 ¡Hola! Soy Alexander</h1>
-
-  <img
-    class="profile"
-    src="https://terralogic.com/wp-content/uploads/2021/06/springworl.png"
-    alt="Foto de Perfil"
-    title="Foto de Perfil Alexander"
-  />
-
-  <hr />
-
-  <section>
-    <h3>📌 About Me</h3>
-    <p>
-      Ingeniero de Sistemas con experiencia como desarrollador Full Stack, especializado en soluciones basadas en Java. He trabajado en el diseño, desarrollo e implementación de aplicaciones web completas, tanto del lado del backend como del frontend, aportando soluciones tecnológicas que optimizan procesos y generan valor para las organizaciones. Manejo tecnologías como Java (Spring Boot), bases de datos relacionales y no relacionales, así como frameworks modernos para el desarrollo frontend. Me caracterizo por mi enfoque analítico, orientación a resultados y compromiso con la mejora continua. En mi tiempo libre, disfruto aprender nuevas tecnologías, desarrollar proyectos personales y potenciar mis habilidades a través de videojuegos.
-    </p>
-  </section>
-
-  <hr />
-
-  <section>
-    <h3>🧠 Tech Stack & Tools</h3>
-
-    <h4>💻 Languages</h4>
-    <div class="badges">
-      <img src="https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
-      <img src="https://img.shields.io/badge/C%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white" alt="C#" />
-      <img src="https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python" />
-      <img src="https://img.shields.io/badge/PHP-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
-      <img src="https://img.shields.io/badge/C++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++" />
-    </div>
-
-    <h4>🧰 Frameworks & Libraries</h4>
-    <div class="badges">
-      <img src="https://img.shields.io/badge/Spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white" alt="Spring" />
-      <img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt=".NET" />
-      <img src="https://img.shields.io/badge/React-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React" />
-      <img src="https://img.shields.io/badge/Angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white" alt="Angular" />
-      <img src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D" alt="Vue.js" />
-      <img src="https://img.shields.io/badge/Laravel-F55247?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel" />
-      <img src="https://img.shields.io/badge/JavaFX-FF6F00?style=for-the-badge&logo=java&logoColor=white" alt="JavaFX" />
-    </div>
-
-    <h4>🗄️ Databases</h4>
-    <div class="badges">
-      <img src="https://img.shields.io/badge/MySQL-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
-      <img src="https://img.shields.io/badge/PostgreSQL-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-      <img src="https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white" alt="SQL Server" />
-      <img src="https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white" alt="Oracle" />
-      <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
-    </div>
-
-    <h4>☁️ Cloud & DevOps</h4>
-    <div class="badges">
-      <img src="https://img.shields.io/badge/Azure-0072C6?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="Azure" />
-      <img src="https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white" alt="GCP" />
-      <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS" />
-      <img src="https://img.shields.io/badge/Docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
-      <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes" />
-    </div>
-
-    <h4>📊 Data & Visualization</h4>
-    <div class="badges">
-      <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=white" alt="Power BI" />
-      <img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white" alt="Excel" />
-    </div>
-
-    <h4>🔧 Tools</h4>
-    <div class="badges">
-      <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
-      <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-      <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-    </div>
-  </section>
-
-  <hr />
-
-  <section style="text-align:center;">
-    <h3>🌐 Connect with me</h3>
-    <a
-      href="https://linkedin.com/in/alexanderbondeveloper"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="ripple-button"
-      aria-label="LinkedIn de Alexander"
-      title="LinkedIn de Alexander"
-    >
+  <main>
+    <article class="card" role="main" aria-label="Perfil profesional de Alexander">
+      <h1>👋 ¡Hola! Soy Alexander</h1>
       <img
-        src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"
-        alt="LinkedIn"
+        src="https://terralogic.com/wp-content/uploads/2021/06/springworl.png"
+        alt="Foto de perfil de Alexander"
+        class="profile-img"
       />
-    </a>
-  </section>
+      <hr />
+      <section aria-labelledby="about-me">
+        <h2 id="about-me">📌 About Me</h2>
+        <p>
+          Ingeniero de Sistemas con experiencia como desarrollador Full Stack, especializado en soluciones basadas en Java. He trabajado en el diseño, desarrollo e implementación de aplicaciones web completas, tanto del lado del backend como del frontend, aportando soluciones tecnológicas que optimizan procesos y generan valor para las organizaciones. Manejo tecnologías como Java (Spring Boot), bases de datos relacionales y no relacionales, así como frameworks modernos para el desarrollo frontend. Me caracterizo por mi enfoque analítico, orientación a resultados y compromiso con la mejora continua. En mi tiempo libre, disfruto aprender nuevas tecnologías, desarrollar proyectos personales y potenciar mis habilidades a través de videojuegos.
+        </p>
+      </section>
+
+      <hr />
+
+      <section aria-labelledby="tech-stack">
+        <h2 id="tech-stack">🧠 Tech Stack & Tools</h2>
+
+        <h3>💻 Languages</h3>
+        <div class="tech-grid" role="list" aria-label="Lenguajes de programación">
+          <div class="tech-item" role="listitem">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java Logo" />
+            <span>Java</span>
+          </div>
+          <div class="tech-item" role="listitem">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C# Logo" />
+            <span>C#</span>
+          </div>
+          <div class="tech-item" role="listitem">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Logo" />
+            <span>Python</span>
+          </div>
+          <div class="tech-item" role="listitem">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP Logo" />
+            <span>PHP</span>
+          </div>
+          <div class="tech-item" role="listitem">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++ Logo" />
+            <span>C++</span>
+          </div>
+        </div>
+
+        <h3>🧰 Frameworks & Libraries</h3>
+        <div class="tech-grid" role="list" aria-label="Frameworks y librerías">
+          <div class="tech-item" role="listitem">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Logo" />
+            <span>Spring</span>
+          </div>
+          <div class="tech-item" role="listitem">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg" alt=".NET Logo" />
+            <span>.NET</span>
+          </div>
+          <div class="tech-item" role="listitem">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Logo" />
+            <span>React</span>
+          </div>
+          <div class="tech-item" role="listitem">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular Logo" />
+            <span>Angular</span>
+          </div>
+          <div class="tech-item" role="listitem">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js Logo" />
+            <span>Vue.js</span>
+          </div>
+          <div class="tech-item" role="listitem">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg" alt="Laravel Logo" />
+            <span>Laravel</span>
+          </div>
+          <div class="tech-item" role="listitem">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="JavaFX Logo" />
+            <span>JavaFX</span>
+          </div>
+        </div>
+
+        <h3>🗄️ Databases</h3>
+        <div class="tech-grid" role="list" aria-label="Bases de datos">
+          <div class="tech-item" role="listitem">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL Logo" />
+            <span>MySQL</span>
+          </div>
+          <div class="tech-item" role="listitem">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL Logo" />
+            <span>PostgreSQL</span>
+          </div>
+          <div class="tech-item" role="listitem">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" alt="SQL Server Logo" />
+            <span>SQL Server</span>
+          </div>
+          <div class="tech-item" role="listitem">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="Oracle Logo" />
+            <span>Oracle</span>
+          </div>
+          <div class="tech-item" role="listitem">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB Logo" />
+            <span>MongoDB</span>
+          </div>
+        </div>
+
+        <h3>☁️ Cloud & DevOps</h3>
+        <div class="tech-grid" role="list" aria-label="Cloud y DevOps">
+          <div class="tech-item" role="listitem">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure Logo" />
+            <span>Azure</span>
+          </div>
+          <div class="tech-item" role="listitem">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="GCP Logo" />
+            <span>GCP</span>
+          </div>
+          <div class="tech-item" role="listitem">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" alt="AWS Logo" />
+            <span>AWS</span>
+          </div>
+          <div class="tech-item" role="listitem">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker Logo" />
+            <span>Docker</span>
+          </div>
+          <div class="tech-item" role="listitem">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes Logo" />
+            <span>Kubernetes</span>
+          </div>
+        </div>
+
+        <h3>📊 Data & Visualization</h3>
+        <div class="tech-grid" role="list" aria-label="Herramientas de datos y visualización">
+          <div class="tech-item" role="listitem">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/powerbi/powerbi-original.svg" alt="Power BI Logo" />
+            <span>Power BI</span>
+          </div>
+          <div class="tech-item" role="listitem">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftexcel/microsoftexcel-original.svg" alt="Excel Logo" />
+            <span>Excel</span>
+          </div>
+        </div>
+
+        <h3>🔧 Tools</h3>
+        <div class="tech-grid" role="list" aria-label="Herramientas">
+          <div class="tech-item" role="listitem">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux Logo" />
+            <span>Linux</span>
+          </div>
+          <div class="tech-item" role="listitem">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git Logo" />
+            <span>Git</span>
+          </div>
+          <div class="tech-item" role="listitem">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub Logo" />
+            <span>GitHub</span>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <section class="connect" aria-label="Redes sociales de Alexander">
+        <h2>🌐 Connect with me</h2>
+        <a
+          href="https://linkedin.com/in/alexanderbondeveloper"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="ripple-btn"
+          aria-label="LinkedIn de Alexander"
+          title="LinkedIn de Alexander"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+            alt="Logo LinkedIn"
+          />
+        </a>
+      </section>
+    </article>
+  </main>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
