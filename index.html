@@ -3,151 +3,90 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dashboard Profesional | Alexander</title>
-
-  <!-- Fuente profesional -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-
-  <!-- FontAwesome CDN para iconos -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-p8fN7Kf6dNmdK0CHTsXacvmxS65xT6kyfuT8nUlYw/tcwP+1z+f9TRDpUIRgq4uRi9cC/kUplIQv7GcPLBQZyQ=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-
+  <title>Alexander - Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
 </head>
 <body>
-  <aside class="sidebar" id="sidebar">
-    <div class="sidebar-header">
-      <img
-        src="https://terralogic.com/wp-content/uploads/2021/06/springworl.png"
-        alt="Foto Alexander"
-        class="sidebar-photo"
-      />
-      <h2 class="sidebar-name">Alexander</h2>
-      <p class="sidebar-role">Full Stack Developer</p>
+
+  <header>
+    <h1>👋 ¡Hola! Soy Alexander</h1>
+    <p class="subtitle">Ingeniero de Sistemas y Desarrollador Full Stack</p>
+    <img
+      src="https://terralogic.com/wp-content/uploads/2021/06/springworl.png"
+      alt="Foto de Perfil"
+      class="profile-pic"
+    />
+  </header>
+
+  <section class="section about">
+    <h2>📌 Sobre mí</h2>
+    <p>
+      Ingeniero de Sistemas con experiencia como desarrollador Full Stack, especializado en soluciones basadas en Java. He trabajado en el diseño, desarrollo e implementación de aplicaciones web completas, tanto del lado del backend como del frontend, aportando soluciones tecnológicas que optimizan procesos y generan valor para las organizaciones. Manejo tecnologías como Java (Spring Boot), bases de datos relacionales y no relacionales, así como frameworks modernos para el desarrollo frontend. Me caracterizo por mi enfoque analítico, orientación a resultados y compromiso con la mejora continua. En mi tiempo libre, disfruto aprender nuevas tecnologías, desarrollar proyectos personales y potenciar mis habilidades a través de videojuegos.
+    </p>
+  </section>
+
+  <section class="section skills">
+    <h2>🧠 Tech Stack &amp; Tools</h2>
+
+    <h3>💻 Lenguajes</h3>
+    <div class="badges">
+      <img src="https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
+      <img src="https://img.shields.io/badge/C%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white" alt="C#" />
+      <img src="https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python" />
+      <img src="https://img.shields.io/badge/PHP-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
+      <img src="https://img.shields.io/badge/C++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++" />
     </div>
 
-    <nav class="sidebar-nav">
-      <ul>
-        <li>
-          <a href="#about" class="nav-link active">
-            <i class="fas fa-user"></i>
-            <span>Sobre mí</span>
-          </a>
-        </li>
-        <li>
-          <a href="#skills" class="nav-link">
-            <i class="fas fa-brain"></i>
-            <span>Habilidades</span>
-          </a>
-        </li>
-        <li>
-          <a href="#contact" class="nav-link">
-            <i class="fas fa-envelope"></i>
-            <span>Contacto</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <h3>🧰 Frameworks &amp; Librerías</h3>
+    <div class="badges">
+      <img src="https://img.shields.io/badge/Spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white" alt="Spring" />
+      <img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt=".NET" />
+      <img src="https://img.shields.io/badge/React-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React" />
+      <img src="https://img.shields.io/badge/Angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white" alt="Angular" />
+      <img src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D" alt="Vue.js" />
+      <img src="https://img.shields.io/badge/Laravel-F55247?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel" />
+      <img src="https://img.shields.io/badge/JavaFX-FF6F00?style=for-the-badge&logo=java&logoColor=white" alt="JavaFX" />
+    </div>
 
-    <button id="btnToggle" aria-label="Toggle Sidebar">
-      <i class="fas fa-bars"></i>
-    </button>
-  </aside>
+    <h3>🗄️ Bases de Datos</h3>
+    <div class="badges">
+      <img src="https://img.shields.io/badge/MySQL-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
+      <img src="https://img.shields.io/badge/PostgreSQL-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+      <img src="https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white" alt="SQL Server" />
+      <img src="https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white" alt="Oracle" />
+      <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
+    </div>
 
-  <main class="main-content" id="mainContent">
-    <header class="header-main">
-      <h1>👋 ¡Hola! Soy <span class="highlight">Alexander</span></h1>
-      <p class="subtitle">Ingeniero de Sistemas y Desarrollador Full Stack</p>
-      <p align="center">
-        <img src="https://terralogic.com/wp-content/uploads/2021/06/springworl.png" alt="Foto de Perfil" width="300" />
-      </p>
-    </header>
+    <h3>☁️ Cloud &amp; DevOps</h3>
+    <div class="badges">
+      <img src="https://img.shields.io/badge/Azure-0072C6?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="Azure" />
+      <img src="https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white" alt="GCP" />
+      <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS" />
+      <img src="https://img.shields.io/badge/Docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+      <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes" />
+    </div>
 
-    <section id="about" class="section-card">
-      <h2><i class="fas fa-user"></i> Sobre mí</h2>
-      <p>
-        Ingeniero de Sistemas con experiencia como desarrollador Full Stack, especializado en soluciones basadas en Java. He trabajado en el diseño, desarrollo e implementación de aplicaciones web completas, tanto del lado del backend como del frontend, aportando soluciones tecnológicas que optimizan procesos y generan valor para las organizaciones. Manejo tecnologías como Java (Spring Boot), bases de datos relacionales y no relacionales, así como frameworks modernos para el desarrollo frontend. Me caracterizo por mi enfoque analítico, orientación a resultados y compromiso con la mejora continua. En mi tiempo libre, disfruto aprender nuevas tecnologías, desarrollar proyectos personales y potenciar mis habilidades a través de videojuegos.
-      </p>
-    </section>
+    <h3>📊 Data &amp; Visualización</h3>
+    <div class="badges">
+      <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=white" alt="Power BI" />
+      <img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white" alt="Excel" />
+    </div>
 
-    <section id="skills" class="section-card">
-      <h2><i class="fas fa-brain"></i> Habilidades</h2>
+    <h3>🔧 Herramientas</h3>
+    <div class="badges">
+      <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
+      <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+      <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+    </div>
+  </section>
 
-      <!-- Lenguajes -->
-      <h3>💻 Lenguajes</h3>
-      <p>
-        <img src="https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
-        <img src="https://img.shields.io/badge/C%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white" alt="C#" />
-        <img src="https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python" />
-        <img src="https://img.shields.io/badge/PHP-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
-        <img src="https://img.shields.io/badge/C++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++" />
-      </p>
+  <section class="section contact">
+    <h2>🌐 Conecta conmigo</h2>
+    <p>
+      <a href="https://linkedin.com/in/alexanderbondeveloper" target="_blank" rel="noopener" class="contact-link">LinkedIn</a>
+    </p>
+  </section>
 
-      <!-- Frameworks -->
-      <h3>🧰 Frameworks y Librerías</h3>
-      <p>
-        <img src="https://img.shields.io/badge/Spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white" alt="Spring" />
-        <img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt=".NET" />
-        <img src="https://img.shields.io/badge/React-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React" />
-        <img src="https://img.shields.io/badge/Angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white" alt="Angular" />
-        <img src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D" alt="Vue.js" />
-        <img src="https://img.shields.io/badge/Laravel-F55247?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel" />
-        <img src="https://img.shields.io/badge/JavaFX-FF6F00?style=for-the-badge&logo=java&logoColor=white" alt="JavaFX" />
-      </p>
-
-      <!-- Bases de datos -->
-      <h3>🗄️ Bases de Datos</h3>
-      <p>
-        <img src="https://img.shields.io/badge/MySQL-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
-        <img src="https://img.shields.io/badge/PostgreSQL-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-        <img src="https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white" alt="SQL Server" />
-        <img src="https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white" alt="Oracle" />
-        <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
-      </p>
-
-      <!-- Cloud & DevOps -->
-      <h3>☁️ Cloud & DevOps</h3>
-      <p>
-        <img src="https://img.shields.io/badge/Azure-0072C6?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="Azure" />
-        <img src="https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white" alt="GCP" />
-        <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS" />
-        <img src="https://img.shields.io/badge/Docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
-        <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes" />
-      </p>
-
-      <!-- Data & Visualization -->
-      <h3>📊 Data & Visualización</h3>
-      <p>
-        <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=white" alt="Power BI" />
-        <img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white" alt="Excel" />
-      </p>
-
-      <!-- Tools -->
-      <h3>🔧 Herramientas</h3>
-      <p>
-        <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
-        <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-        <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-      </p>
-    </section>
-
-    <section id="contact" class="section-card contact-section">
-      <h2><i class="fas fa-envelope"></i> Contacto</h2>
-      <p>Conéctate conmigo en LinkedIn:</p>
-      <a
-        href="https://linkedin.com/in/alexanderbondeveloper"
-        target="_blank"
-        rel="noopener"
-        class="btn-linkedin"
-        ><i class="fab fa-linkedin"></i> LinkedIn</a
-      >
-    </section>
-  </main>
+  <script src="script.js"></script>
 </body>
 </html>
