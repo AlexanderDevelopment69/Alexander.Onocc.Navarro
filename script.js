@@ -6,12 +6,13 @@ btnToggle.addEventListener('click', () => {
   sidebar.classList.toggle('collapsed');
 });
 
-// Cambiar clase active en links y cerrar sidebar en móvil
+// Manejo activo del menú
 navLinks.forEach(link => {
   link.addEventListener('click', () => {
     navLinks.forEach(l => l.classList.remove('active'));
     link.classList.add('active');
 
+    // Cerrar sidebar en móvil
     if(window.innerWidth <= 900) {
       sidebar.classList.add('collapsed');
     }
