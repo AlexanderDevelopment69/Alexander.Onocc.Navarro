@@ -17,8 +17,8 @@
     referrerpolicy="no-referrer"
   />
 
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <aside class="sidebar" id="sidebar">
@@ -34,70 +34,24 @@
 
     <nav class="sidebar-nav">
       <ul>
-        <li>
-          <a href="#dashboard" class="nav-link active">
-            <i class="fas fa-home"></i>
-            <span>Dashboard</span>
-          </a>
-        </li>
-        <li>
-          <a href="#about" class="nav-link">
-            <i class="fas fa-user"></i>
-            <span>Sobre mí</span>
-          </a>
-        </li>
-        <li>
-          <a href="#skills" class="nav-link">
-            <i class="fas fa-brain"></i>
-            <span>Habilidades</span>
-          </a>
-        </li>
-        <li>
-          <a href="#projects" class="nav-link">
-            <i class="fas fa-folder-open"></i>
-            <span>Proyectos</span>
-          </a>
-        </li>
-        <li>
-          <a href="#contact" class="nav-link">
-            <i class="fas fa-envelope"></i>
-            <span>Contacto</span>
-          </a>
-        </li>
+        <li><a href="#dashboard" class="nav-link active"><i class="fas fa-home"></i> Dashboard</a></li>
+        <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> Sobre mí</a></li>
+        <li><a href="#skills" class="nav-link"><i class="fas fa-brain"></i> Habilidades</a></li>
+        <li><a href="#projects" class="nav-link"><i class="fas fa-folder-open"></i> Proyectos</a></li>
+        <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contacto</a></li>
       </ul>
     </nav>
-
-    <button id="btnToggle" aria-label="Toggle Sidebar">
-      <i class="fas fa-bars"></i>
-    </button>
   </aside>
 
   <main class="main-content" id="mainContent">
     <header class="header-main">
-      <h1>Bienvenido, <span class="highlight">Alexander</span></h1>
-      <p class="subtitle">Ingeniero de Sistemas y Desarrollador Full Stack</p>
+      <h1 align="center">👋 ¡Hola! Soy <span class="highlight">Alexander</span></h1>
+      <img
+        src="https://terralogic.com/wp-content/uploads/2021/06/springworl.png"
+        alt="Foto de Perfil"
+        class="profile-image"
+      />
     </header>
-
-    <section id="dashboard" class="section-card">
-      <h2><i class="fas fa-chart-line"></i> Dashboard</h2>
-      <div class="dashboard-cards">
-        <div class="dash-card">
-          <i class="fas fa-code"></i>
-          <h3>Proyectos Activos</h3>
-          <p>5</p>
-        </div>
-        <div class="dash-card">
-          <i class="fas fa-tasks"></i>
-          <h3>Tareas Pendientes</h3>
-          <p>12</p>
-        </div>
-        <div class="dash-card">
-          <i class="fas fa-comments"></i>
-          <h3>Mensajes</h3>
-          <p>3</p>
-        </div>
-      </div>
-    </section>
 
     <section id="about" class="section-card">
       <h2><i class="fas fa-user"></i> Sobre mí</h2>
@@ -107,36 +61,40 @@
     </section>
 
     <section id="skills" class="section-card">
-      <h2><i class="fas fa-brain"></i> Habilidades</h2>
-      <ul class="skills-list">
-        <li><i class="fab fa-java"></i> Java</li>
-        <li><i class="fab fa-js-square"></i> JavaScript / React</li>
-        <li><i class="fab fa-php"></i> PHP / Laravel</li>
-        <li><i class="fas fa-database"></i> Bases de Datos (MySQL, MongoDB)</li>
-        <li><i class="fab fa-docker"></i> Docker & Kubernetes</li>
-      </ul>
+      <h2><i class="fas fa-brain"></i> Tech Stack & Tools</h2>
+
+      <h3>💻 Languages</h3>
+      <div class="badges-row" id="languages"></div>
+
+      <h3>🧰 Frameworks & Libraries</h3>
+      <div class="badges-row" id="frameworks"></div>
+
+      <h3>🗄️ Databases</h3>
+      <div class="badges-row" id="databases"></div>
+
+      <h3>☁️ Cloud & DevOps</h3>
+      <div class="badges-row" id="cloud"></div>
+
+      <h3>📊 Data & Visualization</h3>
+      <div class="badges-row" id="data"></div>
+
+      <h3>🔧 Tools</h3>
+      <div class="badges-row" id="tools"></div>
     </section>
 
-    <section id="projects" class="section-card">
-      <h2><i class="fas fa-folder-open"></i> Proyectos</h2>
-      <ul class="projects-list">
-        <li><i class="fas fa-check-circle"></i> Sistema Gestión de Inventario</li>
-        <li><i class="fas fa-check-circle"></i> Aplicación Web e-Commerce</li>
-        <li><i class="fas fa-check-circle"></i> Plataforma Educativa Online</li>
-      </ul>
-    </section>
-
-    <section id="contact" class="section-card contact-section">
+    <section id="contact" class="section-card">
       <h2><i class="fas fa-envelope"></i> Contacto</h2>
-      <p>Conéctate conmigo en LinkedIn:</p>
-      <a
-        href="https://linkedin.com/in/alexanderbondeveloper"
-        target="_blank"
-        rel="noopener"
-        class="btn-linkedin"
-        ><i class="fab fa-linkedin"></i> LinkedIn</a
-      >
+      <p>Conecta conmigo en LinkedIn para más información o proyectos.</p>
+      <a href="https://linkedin.com/in/alexanderbondeveloper" target="_blank" class="btn-linkedin">
+        <img
+          src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"
+          alt="LinkedIn"
+        />
+      </a>
     </section>
   </main>
+
+  <!-- JS externo -->
+  <script src="scripts.js"></script>
 </body>
 </html>
