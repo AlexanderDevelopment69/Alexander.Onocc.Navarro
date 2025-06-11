@@ -13,24 +13,33 @@ body {
   padding: 20px;
 }
 
-/* Contenedores generales */
+/* Contenedores principales */
 header, section, footer {
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
   padding: 2rem;
-  background: #fff;
+  background: #ffffff;
   margin-top: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Encabezado */
+/* Header */
 header h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
+  text-align: center;
   color: #2c3e50;
 }
 
-/* Títulos de secciones */
+/* Imagen de perfil (opcional) */
+.profile-img {
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 300px;
+}
+
+/* Títulos de sección */
 h2 {
   color: #34495e;
   border-bottom: 2px solid #3498db;
@@ -46,7 +55,7 @@ h3 {
 
 /* Badges */
 .badges img {
-  margin: 5px 8px 5px 0;
+  margin: 5px 8px 10px 0;
 }
 
 /* Footer */
