@@ -9,14 +9,11 @@
 </head>
 <body>
   <aside class="sidebar" id="sidebar">
-    <div class="sidebar-header">
-      <h2>Alexander Bon</h2>
-      <button id="btnToggle" aria-label="Toggle sidebar">
-        <span class="burger"></span>
-        <span class="burger"></span>
-        <span class="burger"></span>
-      </button>
-    </div>
+    <button id="btnToggle" aria-label="Toggle sidebar">
+      <span class="burger"></span>
+      <span class="burger"></span>
+      <span class="burger"></span>
+    </button>
     <nav>
       <ul>
         <li><a href="#about" class="nav-link active">Sobre mí</a></li>
@@ -28,9 +25,14 @@
   </aside>
 
   <main class="main-content" id="mainContent">
-    <header>
-      <h1>👋 ¡Hola! Soy Alexander</h1>
-      <p>Ingeniero de Sistemas | Desarrollador Full Stack</p>
+    <header class="header-main">
+      <div class="profile-photo-container">
+        <img src="https://terralogic.com/wp-content/uploads/2021/06/springworl.png" alt="Foto de Alexander Bon" class="profile-photo" />
+      </div>
+      <div class="intro-text">
+        <h1>👋 ¡Hola! Soy <span class="highlight">Alexander Bon</span></h1>
+        <p class="subtitle">Ingeniero de Sistemas | Desarrollador Full Stack</p>
+      </div>
     </header>
 
     <section id="about" class="card">
@@ -108,11 +110,12 @@
     </section>
 
     <section id="contact" class="card">
-      <h2>Contacto</h2>
-      <p>¡Conecta conmigo en LinkedIn!</p>
-      <a href="https://linkedin.com/in/alexanderbondeveloper" target="_blank" class="btn-linkedin" rel="noopener">
-        <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-      </a>
+      <h2>🌐 Conéctate conmigo</h2>
+      <p>
+        <a href="https://linkedin.com/in/alexanderbondeveloper" target="_blank" rel="noopener" class="btn-linkedin">
+          <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+        </a>
+      </p>
     </section>
   </main>
 </body>
