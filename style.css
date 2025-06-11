@@ -1,51 +1,60 @@
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
+/* Reset básico */
+* {
   margin: 0;
   padding: 0;
-  background-color: #f8f9fa;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
   color: #333;
+  line-height: 1.6;
+  padding: 20px;
 }
 
-header {
-  text-align: center;
-  background-color: #343a40;
-  color: white;
-  padding: 2rem 1rem;
-}
-
-.profile-img {
-  width: 200px;
-  border-radius: 50%;
-  margin-top: 1rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-section {
-  padding: 2rem;
-  max-width: 1000px;
+/* Contenedores generales */
+header, section, footer {
+  max-width: 900px;
   margin: auto;
+  padding: 2rem;
+  background: #fff;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Encabezado */
+header h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+/* Títulos de secciones */
 h2 {
-  color: #007bff;
-  margin-top: 2rem;
+  color: #34495e;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
 }
 
-.badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin: 1rem 0;
+/* Subtítulos */
+h3 {
+  margin-top: 1.5rem;
+  color: #2c3e50;
 }
 
+/* Badges */
+.badges img {
+  margin: 5px 8px 5px 0;
+}
+
+/* Footer */
 footer {
   text-align: center;
-  padding: 2rem;
-  background-color: #343a40;
-  color: white;
 }
 
-footer img {
-  margin-top: 1rem;
+/* Enlaces */
+a {
+  text-decoration: none;
 }
