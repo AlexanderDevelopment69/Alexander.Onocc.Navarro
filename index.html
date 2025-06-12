@@ -9,26 +9,54 @@
 </head>
 <body>
 <div class="dashboard">
-  <aside class="sidebar">
+  <aside class="sidebar" id="sidebar">
     <div class="sidebar-header">
       <h2>Alexander Navarro</h2>
       <button id="menu-toggle" aria-label="Toggle menu">
-        <svg width="24" height="24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg width="24" height="24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
       </button>
     </div>
     <nav class="menu" id="menu">
       <ul>
-        <li><a href="#about" class="menu-link active" aria-current="page"><span class="icon">👤</span> Acerca de Mí</a></li>
-        <li><a href="#skills" class="menu-link"><span class="icon">🧠</span> Habilidades</a></li>
-        <li><a href="#experience" class="menu-link"><span class="icon">💼</span> Experiencia</a></li>
-        <li><a href="#languages" class="menu-link"><span class="icon">🌍</span> Idiomas</a></li>
-        <li><a href="#education" class="menu-link"><span class="icon">🎓</span> Educación</a></li>
-        <li><a href="#contact" class="menu-link"><span class="icon">📞</span> Contacto</a></li>
+        <li><a href="#about" class="menu-link active" aria-current="page">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="7" r="4"/>
+            <path d="M5.5 21a7 7 0 0 1 13 0"/>
+          </svg> Acerca de Mí</a></li>
+        <li><a href="#skills" class="menu-link">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2l1.5 4.5H18l-3.5 2.5 1.5 4.5L12 11l-3.5 2.5 1.5-4.5L6 6.5h4.5L12 2z"/>
+            <path d="M2 21h20"/>
+          </svg> Habilidades</a></li>
+        <li><a href="#experience" class="menu-link">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+            <path d="M16 3v4M8 3v4M3 11h18"/>
+          </svg> Experiencia</a></li>
+        <li><a href="#languages" class="menu-link">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M2 12h20M12 2a15.3 15.3 0 0 1 0 20M12 2a15.3 15.3 0 0 0 0 20"/>
+          </svg> Idiomas</a></li>
+        <li><a href="#education" class="menu-link">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M12 2l9 4-9 4-9-4 9-4z"/>
+            <path d="M12 10v12"/>
+            <path d="M21 6v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6"/>
+          </svg> Educación</a></li>
+        <li><a href="#contact" class="menu-link">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13 1.21.37 2.39.72 3.5a2 2 0 0 1-.45 2.11L9.91 10.91a16 16 0 0 0 6 6l1.58-1.58a2 2 0 0 1 2.11-.45c1.11.35 2.29.59 3.5.72a2 2 0 0 1 1.72 2z"/>
+          </svg> Contacto</a></li>
       </ul>
     </nav>
   </aside>
 
-  <main class="main">
+  <main class="main" id="main-content">
     <section id="about" class="section card fade-in">
       <h1 class="section-title">Acerca de Mí</h1>
       <p class="about-text">
@@ -111,13 +139,12 @@
         <li><strong>Edad:</strong> 26 años</li>
         <li><strong>Celular:</strong> +51 946993632</li>
         <li><strong>Ubicación:</strong> Huancayo, Perú</li>
-        <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/alexanderbondeveloper" target="_blank" rel="noopener">linkedin.com/in/alexanderbondeveloper</a></li>
-        <li><strong>GitHub:</strong> <a href="https://github.com/AlexanderDevelopment69" target="_blank" rel="noopener">github.com/AlexanderDevelopment69</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/alexanderbondeveloper" target="_blank" rel="noopener noreferrer">linkedin.com/in/alexanderbondeveloper</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/AlexanderDevelopment69" target="_blank" rel="noopener noreferrer">github.com/AlexanderDevelopment69</a></li>
       </ul>
     </section>
   </main>
 </div>
-
 <script src="script.js"></script>
 </body>
 </html>
