@@ -1,104 +1,123 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Alexander Navarro | Backend Developer</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Alexander Navarro | Backend Developer Senior</title>
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <div class="dashboard">
-    <!-- Sidebar menu con solo opciones -->
-    <aside class="sidebar">
-      <nav class="menu">
-        <ul>
-          <li><a href="#about" class="menu-link active">Acerca de Mí</a></li>
-          <li><a href="#skills" class="menu-link">Habilidades</a></li>
-          <li><a href="#experience" class="menu-link">Experiencia</a></li>
-          <li><a href="#languages" class="menu-link">Idiomas</a></li>
-          <li><a href="#education" class="menu-link">Educación</a></li>
-          <li><a href="#contact" class="menu-link">Contacto</a></li>
-        </ul>
-      </nav>
-    </aside>
+<div class="dashboard">
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h2>Alexander Navarro</h2>
+      <button id="menu-toggle" aria-label="Toggle menu">
+        <svg width="24" height="24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+    <nav class="menu" id="menu">
+      <ul>
+        <li><a href="#about" class="menu-link active" aria-current="page"><span class="icon">👤</span> Acerca de Mí</a></li>
+        <li><a href="#skills" class="menu-link"><span class="icon">🧠</span> Habilidades</a></li>
+        <li><a href="#experience" class="menu-link"><span class="icon">💼</span> Experiencia</a></li>
+        <li><a href="#languages" class="menu-link"><span class="icon">🌍</span> Idiomas</a></li>
+        <li><a href="#education" class="menu-link"><span class="icon">🎓</span> Educación</a></li>
+        <li><a href="#contact" class="menu-link"><span class="icon">📞</span> Contacto</a></li>
+      </ul>
+    </nav>
+  </aside>
 
-    <!-- Main con toda la info -->
-    <main class="main">
-      <section id="about" class="section card fade-in">
-        <h1>Acerca de Mí</h1>
+  <main class="main">
+    <section id="about" class="section card fade-in">
+      <h1 class="section-title">Acerca de Mí</h1>
+      <p class="about-text">
+        Soy egresado en Ingeniería de Sistemas e Informática con una gran motivación para adquirir experiencia profesional en diversos sectores empresariales.
+        Me considero una persona analítica, organizada y comprometida con el logro de objetivos empresariales, trabajando en equipo y con enfoque a resultados.
+      </p>
+    </section>
+
+    <section id="skills" class="section card animate-pop delay-1">
+      <h2 class="section-title">Habilidades</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <h3>Java Spring</h3>
+          <div class="progress-bar"><div style="width: 90%"></div></div>
+        </div>
+        <div class="skill">
+          <h3>JavaFX</h3>
+          <div class="progress-bar"><div style="width: 80%"></div></div>
+        </div>
+        <div class="skill">
+          <h3>Azure</h3>
+          <div class="progress-bar"><div style="width: 70%"></div></div>
+        </div>
+        <div class="skill">
+          <h3>Docker</h3>
+          <div class="progress-bar"><div style="width: 75%"></div></div>
+        </div>
+        <div class="skill">
+          <h3>MySQL / MS SQL</h3>
+          <div class="progress-bar"><div style="width: 85%"></div></div>
+        </div>
+        <div class="skill">
+          <h3>SCRUM</h3>
+          <div class="progress-bar"><div style="width: 80%"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section card animate-pop delay-2">
+      <h2 class="section-title">Experiencia</h2>
+      <article class="experience-item">
+        <h3>Backend Developer - Tismart <span class="year">2024</span></h3>
         <p>
-          Soy egresado en Ingeniería de Sistemas e Informática con una gran motivación para adquirir experiencia en diversas áreas de TI.
-          Me considero una persona analítica, organizada, con disposición al trabajo en equipo y compromiso con los objetivos empresariales.
+          Desarrollo, implementación y mantenimiento de sistemas para Belcorp usando Java Spring Framework, JSF, SQL Server y PL/SQL.
+          Resolución de incidentes para garantizar continuidad operativa. Desarrollo Web y Desktop.
         </p>
-      </section>
+      </article>
+      <article class="experience-item">
+        <h3>Freelance Developer <span class="year">2020–2023</span></h3>
+        <p>
+          Desarrollo de aplicaciones para gestión de ventas e inventarios orientadas a pymes y otros sectores.
+        </p>
+      </article>
+      <article class="experience-item">
+        <h3>Voluntariado - Corte Superior de Justicia Junín <span class="year">2019</span></h3>
+        <p>
+          Apoyo en el área informática y de imagen organizacional.
+        </p>
+      </article>
+    </section>
 
-      <section id="skills" class="section card animate-pop delay-1">
-        <h2>🧠 Habilidades</h2>
-        <div class="tags">
-          <span>Java</span>
-          <span>Spring Boot</span>
-          <span>JavaFX</span>
-          <span>Azure</span>
-          <span>Docker</span>
-          <span>MySQL</span>
-          <span>SQL Server</span>
-          <span>Linux Server</span>
-          <span>SCRUM</span>
-        </div>
-      </section>
+    <section id="languages" class="section card animate-pop delay-3">
+      <h2 class="section-title">Idiomas</h2>
+      <ul class="languages-list">
+        <li><strong>Español:</strong> Nativo</li>
+        <li><strong>Inglés:</strong> Intermedio</li>
+      </ul>
+    </section>
 
-      <section id="experience" class="section card animate-pop delay-2">
-        <h2>💼 Experiencia</h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <h3>Tismart (2024) — Backend Developer</h3>
-            <p>
-              Desarrollo y mantenimiento de sistemas para Belcorp utilizando Java Spring, JSF, SQL Server y PL/SQL.
-              Desarrollo de aplicaciones Web y Desktop. Resolución de incidentes en producción.
-            </p>
-          </div>
-          <div class="timeline-item">
-            <h3>Freelance (2020–2023)</h3>
-            <p>
-              Desarrollo de sistemas personalizados de ventas, inventario y gestión para pymes de distintos rubros.
-            </p>
-          </div>
-          <div class="timeline-item">
-            <h3>Corte Superior de Justicia (2019)</h3>
-            <p>
-              Soporte en área de informática e imagen institucional como voluntario en Junín.
-            </p>
-          </div>
-        </div>
-      </section>
+    <section id="education" class="section card animate-pop delay-4">
+      <h2 class="section-title">Educación</h2>
+      <p><strong>Bachiller</strong> en Ingeniería de Sistemas e Informática</p>
+      <p>Universidad Continental (2017–2023)</p>
+    </section>
 
-      <section id="languages" class="section card animate-pop delay-3">
-        <h2>🌍 Idiomas</h2>
-        <p>Español (Nativo)</p>
-        <p>Inglés (Intermedio)</p>
-      </section>
+    <section id="contact" class="section card animate-pop delay-5">
+      <h2 class="section-title">Contacto</h2>
+      <ul class="contact-list">
+        <li><strong>Nombre y Apellidos:</strong> Alexander Bryan Onocc Navarro</li>
+        <li><strong>Edad:</strong> 26 años</li>
+        <li><strong>Celular:</strong> +51 946993632</li>
+        <li><strong>Ubicación:</strong> Huancayo, Perú</li>
+        <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/alexanderbondeveloper" target="_blank" rel="noopener">linkedin.com/in/alexanderbondeveloper</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/AlexanderDevelopment69" target="_blank" rel="noopener">github.com/AlexanderDevelopment69</a></li>
+      </ul>
+    </section>
+  </main>
+</div>
 
-      <section id="education" class="section card animate-pop delay-4">
-        <h2>🎓 Educación</h2>
-        <p>Bachiller en Ingeniería de Sistemas e Informática</p>
-        <p>Universidad Continental (2017–2023)</p>
-      </section>
-
-      <section id="contact" class="section card animate-pop delay-5">
-        <h2>📞 Contacto</h2>
-        <ul>
-          <li><strong>Nombre:</strong> Alexander Bryan Onocc Navarro</li>
-          <li><strong>Edad:</strong> 26 años</li>
-          <li><strong>Celular:</strong> +51 946993632</li>
-          <li><strong>Ubicación:</strong> Huancayo, Perú</li>
-          <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/alexanderbondeveloper" target="_blank">linkedin.com/in/alexanderbondeveloper</a></li>
-          <li><strong>GitHub:</strong> <a href="https://github.com/AlexanderDevelopment69" target="_blank">github.com/AlexanderDevelopment69</a></li>
-        </ul>
-      </section>
-    </main>
-  </div>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
