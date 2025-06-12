@@ -9,99 +9,92 @@
 </head>
 <body>
   <div class="dashboard">
+    <!-- Sidebar -->
     <aside class="sidebar">
       <div class="profile">
-        <img src="https://terralogic.com/wp-content/uploads/2021/06/springworl.png" alt="Foto de perfil" />
+        <div class="avatar">
+          <img src="https://terralogic.com/wp-content/uploads/2021/06/springworl.png" alt="Foto de perfil" />
+        </div>
         <h2>Alexander Bryan<br>Onocc Navarro</h2>
-        <p>Backend Developer</p>
+        <p class="role">Backend Developer</p>
       </div>
+
       <div class="sidebar-section">
-        <h3>📍 Contacto</h3>
+        <h3>📞 Contacto</h3>
         <ul>
-          <li><strong>Edad:</strong> 26</li>
+          <li><strong>Edad:</strong> 26 años</li>
           <li><strong>Celular:</strong> +51 946993632</li>
           <li><strong>Ubicación:</strong> Huancayo, Perú</li>
-          <li><strong>Email:</strong> tu-email@ejemplo.com</li>
         </ul>
       </div>
+
       <div class="sidebar-section">
         <h3>🌐 Redes</h3>
         <a href="https://linkedin.com/in/alexanderbondeveloper" target="_blank">LinkedIn</a>
         <a href="https://github.com/AlexanderDevelopment69" target="_blank">GitHub</a>
       </div>
+
+      <div class="sidebar-section">
+        <h3>🎓 Educación</h3>
+        <p>Bachiller en Ingeniería de Sistemas e Informática</p>
+        <p>Universidad Continental (2017–2023)</p>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>🌍 Idiomas</h3>
+        <p>Español (Nativo)</p>
+        <p>Inglés (Intermedio)</p>
+      </div>
     </aside>
 
-    <main class="main">
-      <section class="intro fade-in">
+    <!-- Main -->
+    <main class="main fade-in">
+      <section class="intro card">
         <h1>Acerca de Mí</h1>
         <p>
-          Soy egresado en Ingeniería de Sistemas e Informática, con gran motivación para adquirir experiencia profesional en diversos sectores empresariales.
-          Busco potenciar mis habilidades en tecnologías de la información. Soy analítico, organizado, con fuerte ética de trabajo y compromiso en equipos.
+          Soy egresado en Ingeniería de Sistemas e Informática con una gran motivación para adquirir experiencia en diversas áreas de TI.
+          Me considero una persona analítica, organizada, con disposición al trabajo en equipo y compromiso con los objetivos empresariales.
         </p>
       </section>
 
-      <section class="skills fade-in">
-        <h2>🧠 Habilidades Técnicas</h2>
+      <section class="skills card animate-pop">
+        <h2>🧠 Habilidades</h2>
         <div class="tags">
           <span>Java</span>
           <span>Spring Boot</span>
           <span>JavaFX</span>
-          <span>SQL / PL-SQL</span>
-          <span>MySQL</span>
-          <span>SQL Server</span>
           <span>Azure</span>
           <span>Docker</span>
+          <span>MySQL</span>
+          <span>SQL Server</span>
           <span>Linux Server</span>
           <span>SCRUM</span>
         </div>
       </section>
 
-      <section class="stack fade-in">
-        <h2>💻 Tecnologías</h2>
-        <div class="tech-grid">
-          <img src="https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white"/>
-          <img src="https://img.shields.io/badge/Spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white"/>
-          <img src="https://img.shields.io/badge/JavaFX-FF6F00?style=for-the-badge&logo=java&logoColor=white"/>
-          <img src="https://img.shields.io/badge/Azure-0072C6?style=for-the-badge&logo=microsoftazure&logoColor=white"/>
-          <img src="https://img.shields.io/badge/Docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white"/>
-          <img src="https://img.shields.io/badge/MySQL-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white"/>
-          <img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white"/>
-          <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
-        </div>
-      </section>
-
-      <section class="experience fade-in">
+      <section class="experience card animate-pop delay-1">
         <h2>💼 Experiencia</h2>
-        <div class="job">
-          <h3>Backend Developer - Tismart (2024)</h3>
-          <p>
-            Desarrollo y mantenimiento de sistemas para Belcorp. Resolución de incidentes críticos usando Java Spring, JSF, PL/SQL, y SQL Server.
-          </p>
-        </div>
-        <div class="job">
-          <h3>Freelance Developer (2020–2023)</h3>
-          <p>
-            Desarrollo de sistemas web y de escritorio para ventas e inventarios en pymes de distintos sectores.
-          </p>
-        </div>
-        <div class="job">
-          <h3>Voluntariado - Corte Superior de Justicia (2019)</h3>
-          <p>
-            Apoyo técnico en informática e imagen institucional en la Corte Superior de Justicia de Junín.
-          </p>
-        </div>
-      </section>
 
-      <section class="education fade-in">
-        <h2>🎓 Educación</h2>
-        <p><strong>Bachiller en Ingeniería de Sistemas e Informática</strong><br>Universidad Continental (2017–2023)</p>
-      </section>
-
-      <section class="languages fade-in">
-        <h2>🌍 Idiomas</h2>
-        <div class="tags">
-          <span>Español (Nativo)</span>
-          <span>Inglés (Intermedio)</span>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>Tismart (2024) — Backend Developer</h3>
+            <p>
+              Desarrollo y mantenimiento de sistemas para Belcorp utilizando Java Spring, JSF, SQL Server y PL/SQL.
+              Desarrollo de aplicaciones Web y Desktop. Resolución de incidentes en producción.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <h3>Freelance (2020–2023)</h3>
+            <p>
+              Desarrollo de sistemas personalizados de ventas, inventario y gestión para pymes de distintos rubros.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <h3>Corte Superior de Justicia (2019)</h3>
+            <p>
+              Soporte en área de informática e imagen institucional como voluntario en Junín.
+            </p>
+          </div>
         </div>
       </section>
     </main>
