@@ -1,4 +1,5 @@
-// Smooth scroll and active menu highlight
+// Navegación suave y menú móvil toggle
+
 const links = document.querySelectorAll('.menu-link');
 const sections = [...document.querySelectorAll('.section')];
 const menu = document.getElementById('menu');
@@ -10,8 +11,7 @@ links.forEach(link => {
     const targetID = link.getAttribute('href').substring(1);
     const targetSection = document.getElementById(targetID);
     targetSection.scrollIntoView({ behavior: 'smooth' });
-
-    // Close mobile menu
+    // Cerrar menú móvil
     if (menu.classList.contains('show')) {
       menu.classList.remove('show');
     }
@@ -19,7 +19,7 @@ links.forEach(link => {
 });
 
 window.addEventListener('scroll', () => {
-  let scrollPos = window.scrollY + 100;
+  let scrollPos = window.scrollY + window.innerHeight / 3;
   sections.forEach(section => {
     if (
       scrollPos >= section.offsetTop &&
@@ -28,7 +28,7 @@ window.addEventListener('scroll', () => {
       const id = section.getAttribute('id');
       links.forEach(link => {
         link.classList.toggle('active', link.getAttribute('href').substring(1) === id);
-        if(link.classList.contains('active')) {
+        if (link.classList.contains('active')) {
           link.setAttribute('aria-current', 'page');
         } else {
           link.removeAttribute('aria-current');
@@ -38,7 +38,6 @@ window.addEventListener('scroll', () => {
   });
 });
 
-// Mobile menu toggle
 menuToggle.addEventListener('click', () => {
   menu.classList.toggle('show');
 });
