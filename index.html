@@ -2,10 +2,10 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Alexander Navarro | Backend Developer</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
   <div class="dashboard">
@@ -28,10 +28,29 @@
         </ul>
       </div>
 
-      <div class="sidebar-section">
-        <h3>🌐 Redes</h3>
-        <a href="https://linkedin.com/in/alexanderbondeveloper" target="_blank">LinkedIn</a>
-        <a href="https://github.com/AlexanderDevelopment69" target="_blank">GitHub</a>
+      <div class="sidebar-section collapsible">
+        <h3 class="collapsible-header">🧠 Habilidades <span class="arrow">▼</span></h3>
+        <div class="collapsible-content">
+          <div class="tags">
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>JavaFX</span>
+            <span>Azure</span>
+            <span>Docker</span>
+            <span>MySQL</span>
+            <span>SQL Server</span>
+            <span>Linux Server</span>
+            <span>SCRUM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-section collapsible">
+        <h3 class="collapsible-header">🌐 Redes <span class="arrow">▼</span></h3>
+        <div class="collapsible-content">
+          <a href="https://linkedin.com/in/alexanderbondeveloper" target="_blank">LinkedIn</a>
+          <a href="https://github.com/AlexanderDevelopment69" target="_blank">GitHub</a>
+        </div>
       </div>
 
       <div class="sidebar-section">
@@ -40,10 +59,12 @@
         <p>Universidad Continental (2017–2023)</p>
       </div>
 
-      <div class="sidebar-section">
-        <h3>🌍 Idiomas</h3>
-        <p>Español (Nativo)</p>
-        <p>Inglés (Intermedio)</p>
+      <div class="sidebar-section collapsible">
+        <h3 class="collapsible-header">🌍 Idiomas <span class="arrow">▼</span></h3>
+        <div class="collapsible-content">
+          <p>Español (Nativo)</p>
+          <p>Inglés (Intermedio)</p>
+        </div>
       </div>
     </aside>
 
@@ -55,21 +76,6 @@
           Soy egresado en Ingeniería de Sistemas e Informática con una gran motivación para adquirir experiencia en diversas áreas de TI.
           Me considero una persona analítica, organizada, con disposición al trabajo en equipo y compromiso con los objetivos empresariales.
         </p>
-      </section>
-
-      <section class="skills card animate-pop">
-        <h2>🧠 Habilidades</h2>
-        <div class="tags">
-          <span>Java</span>
-          <span>Spring Boot</span>
-          <span>JavaFX</span>
-          <span>Azure</span>
-          <span>Docker</span>
-          <span>MySQL</span>
-          <span>SQL Server</span>
-          <span>Linux Server</span>
-          <span>SCRUM</span>
-        </div>
       </section>
 
       <section class="experience card animate-pop delay-1">
@@ -99,5 +105,7 @@
       </section>
     </main>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
