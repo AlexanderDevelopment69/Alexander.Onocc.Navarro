@@ -1,30 +1,44 @@
-// Navegación suave + activar el link correspondiente
+// Smooth scroll and active menu highlight
 const links = document.querySelectorAll('.menu-link');
+const sections = [...document.querySelectorAll('.section')];
+const menu = document.getElementById('menu');
+const menuToggle = document.getElementById('menu-toggle');
 
 links.forEach(link => {
   link.addEventListener('click', e => {
     e.preventDefault();
-    const targetId = link.getAttribute('href').substring(1);
-    const targetSection = document.getElementById(targetId);
-    targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    const targetID = link.getAttribute('href').substring(1);
+    const targetSection = document.getElementById(targetID);
+    targetSection.scrollIntoView({ behavior: 'smooth' });
 
-    // Quitar active a todos y poner solo al clickeado
-    links.forEach(l => l.classList.remove('active'));
-    link.classList.add('active');
+    // Close mobile menu
+    if (menu.classList.contains('show')) {
+      menu.classList.remove('show');
+    }
   });
 });
 
-// Cambiar active según scroll (opcional)
 window.addEventListener('scroll', () => {
-  let scrollPos = window.scrollY || window.pageYOffset;
-  links.forEach(link => {
-    const section = document.querySelector(link.getAttribute('href'));
+  let scrollPos = window.scrollY + 100;
+  sections.forEach(section => {
     if (
-      section.offsetTop <= scrollPos + 100 &&
-      section.offsetTop + section.offsetHeight > scrollPos + 100
+      scrollPos >= section.offsetTop &&
+      scrollPos < section.offsetTop + section.offsetHeight
     ) {
-      links.forEach(l => l.classList.remove('active'));
-      link.classList.add('active');
+      const id = section.getAttribute('id');
+      links.forEach(link => {
+        link.classList.toggle('active', link.getAttribute('href').substring(1) === id);
+        if(link.classList.contains('active')) {
+          link.setAttribute('aria-current', 'page');
+        } else {
+          link.removeAttribute('aria-current');
+        }
+      });
     }
   });
+});
+
+// Mobile menu toggle
+menuToggle.addEventListener('click', () => {
+  menu.classList.toggle('show');
 });
