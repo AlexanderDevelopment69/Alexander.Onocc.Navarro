@@ -9,68 +9,23 @@
 </head>
 <body>
   <div class="dashboard">
-    <!-- Sidebar -->
+    <!-- Sidebar menu con solo opciones -->
     <aside class="sidebar">
-      <div class="profile">
-        <div class="avatar">
-          <img src="https://terralogic.com/wp-content/uploads/2021/06/springworl.png" alt="Foto de perfil" />
-        </div>
-        <h2>Alexander Bryan<br>Onocc Navarro</h2>
-        <p class="role">Backend Developer</p>
-      </div>
-
-      <div class="sidebar-section">
-        <h3>📞 Contacto</h3>
+      <nav class="menu">
         <ul>
-          <li><strong>Edad:</strong> 26 años</li>
-          <li><strong>Celular:</strong> +51 946993632</li>
-          <li><strong>Ubicación:</strong> Huancayo, Perú</li>
+          <li><a href="#about" class="menu-link active">Acerca de Mí</a></li>
+          <li><a href="#skills" class="menu-link">Habilidades</a></li>
+          <li><a href="#experience" class="menu-link">Experiencia</a></li>
+          <li><a href="#languages" class="menu-link">Idiomas</a></li>
+          <li><a href="#education" class="menu-link">Educación</a></li>
+          <li><a href="#contact" class="menu-link">Contacto</a></li>
         </ul>
-      </div>
-
-      <div class="sidebar-section collapsible">
-        <h3 class="collapsible-header">🧠 Habilidades <span class="arrow">▼</span></h3>
-        <div class="collapsible-content">
-          <div class="tags">
-            <span>Java</span>
-            <span>Spring Boot</span>
-            <span>JavaFX</span>
-            <span>Azure</span>
-            <span>Docker</span>
-            <span>MySQL</span>
-            <span>SQL Server</span>
-            <span>Linux Server</span>
-            <span>SCRUM</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="sidebar-section collapsible">
-        <h3 class="collapsible-header">🌐 Redes <span class="arrow">▼</span></h3>
-        <div class="collapsible-content">
-          <a href="https://linkedin.com/in/alexanderbondeveloper" target="_blank">LinkedIn</a>
-          <a href="https://github.com/AlexanderDevelopment69" target="_blank">GitHub</a>
-        </div>
-      </div>
-
-      <div class="sidebar-section">
-        <h3>🎓 Educación</h3>
-        <p>Bachiller en Ingeniería de Sistemas e Informática</p>
-        <p>Universidad Continental (2017–2023)</p>
-      </div>
-
-      <div class="sidebar-section collapsible">
-        <h3 class="collapsible-header">🌍 Idiomas <span class="arrow">▼</span></h3>
-        <div class="collapsible-content">
-          <p>Español (Nativo)</p>
-          <p>Inglés (Intermedio)</p>
-        </div>
-      </div>
+      </nav>
     </aside>
 
-    <!-- Main -->
-    <main class="main fade-in">
-      <section class="intro card">
+    <!-- Main con toda la info -->
+    <main class="main">
+      <section id="about" class="section card fade-in">
         <h1>Acerca de Mí</h1>
         <p>
           Soy egresado en Ingeniería de Sistemas e Informática con una gran motivación para adquirir experiencia en diversas áreas de TI.
@@ -78,9 +33,23 @@
         </p>
       </section>
 
-      <section class="experience card animate-pop delay-1">
-        <h2>💼 Experiencia</h2>
+      <section id="skills" class="section card animate-pop delay-1">
+        <h2>🧠 Habilidades</h2>
+        <div class="tags">
+          <span>Java</span>
+          <span>Spring Boot</span>
+          <span>JavaFX</span>
+          <span>Azure</span>
+          <span>Docker</span>
+          <span>MySQL</span>
+          <span>SQL Server</span>
+          <span>Linux Server</span>
+          <span>SCRUM</span>
+        </div>
+      </section>
 
+      <section id="experience" class="section card animate-pop delay-2">
+        <h2>💼 Experiencia</h2>
         <div class="timeline">
           <div class="timeline-item">
             <h3>Tismart (2024) — Backend Developer</h3>
@@ -102,6 +71,30 @@
             </p>
           </div>
         </div>
+      </section>
+
+      <section id="languages" class="section card animate-pop delay-3">
+        <h2>🌍 Idiomas</h2>
+        <p>Español (Nativo)</p>
+        <p>Inglés (Intermedio)</p>
+      </section>
+
+      <section id="education" class="section card animate-pop delay-4">
+        <h2>🎓 Educación</h2>
+        <p>Bachiller en Ingeniería de Sistemas e Informática</p>
+        <p>Universidad Continental (2017–2023)</p>
+      </section>
+
+      <section id="contact" class="section card animate-pop delay-5">
+        <h2>📞 Contacto</h2>
+        <ul>
+          <li><strong>Nombre:</strong> Alexander Bryan Onocc Navarro</li>
+          <li><strong>Edad:</strong> 26 años</li>
+          <li><strong>Celular:</strong> +51 946993632</li>
+          <li><strong>Ubicación:</strong> Huancayo, Perú</li>
+          <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/alexanderbondeveloper" target="_blank">linkedin.com/in/alexanderbondeveloper</a></li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/AlexanderDevelopment69" target="_blank">github.com/AlexanderDevelopment69</a></li>
+        </ul>
       </section>
     </main>
   </div>
