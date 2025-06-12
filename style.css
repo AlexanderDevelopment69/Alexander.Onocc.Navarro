@@ -6,6 +6,7 @@
   --white: #ffffff;
   --text: #1e293b;
   --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  --transition-speed: 0.3s;
 }
 
 * {
@@ -28,86 +29,79 @@ body {
 }
 
 .sidebar {
-  width: 300px;
+  width: 220px;
   background-color: var(--blue-dark);
   color: var(--white);
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  padding: 2rem 1.5rem;
   box-shadow: var(--shadow);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
 }
 
-.profile {
-  text-align: center;
+.menu ul {
+  list-style: none;
 }
 
-.avatar img {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  border: 2px solid var(--blue-light);
-  margin-bottom: 1rem;
-  transition: transform 0.3s;
+.menu-link {
+  display: block;
+  padding: 1rem 0.5rem;
+  color: var(--blue-light);
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color var(--transition-speed), color var(--transition-speed);
   cursor: pointer;
 }
 
-.avatar img:hover {
-  transform: scale(1.1);
-}
-
-.profile h2 {
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-
-.role {
-  color: var(--blue-light);
-  font-size: 0.9rem;
-  margin-top: 0.25rem;
-}
-
-.sidebar-section h3 {
-  font-size: 0.95rem;
-  margin-bottom: 0.5rem;
-  color: var(--blue-light);
-  cursor: default;
-}
-
-.sidebar-section ul {
-  list-style: none;
-  padding-left: 0;
-  font-size: 0.85rem;
-}
-
-.sidebar-section a {
-  color: var(--blue-light);
-  text-decoration: none;
-  display: block;
-  margin-bottom: 0.3rem;
-  font-size: 0.85rem;
-  transition: color 0.3s ease;
-}
-
-.sidebar-section a:hover {
+.menu-link:hover,
+.menu-link.active {
+  background-color: var(--blue);
   color: var(--white);
+}
+
+.main {
+  margin-left: 220px;
+  padding: 2rem 3rem;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.section {
+  margin-bottom: 3rem;
+  background: var(--white);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+}
+
+h1, h2 {
+  color: var(--blue);
+  margin-bottom: 1rem;
 }
 
 .tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  font-size: 0.85rem;
+  gap: 0.6rem;
+  font-size: 0.9rem;
 }
 
 .tags span {
   background-color: var(--blue);
   color: var(--white);
-  padding: 0.4rem 0.8rem;
+  padding: 0.4rem 1rem;
   border-radius: 999px;
   user-select: none;
 }
 
+/* Timeline */
 .timeline-item {
   border-left: 3px solid var(--blue);
   padding-left: 1rem;
@@ -136,7 +130,19 @@ body {
 }
 
 .animate-pop.delay-1 {
-  animation-delay: 0.3s;
+  animation-delay: 0.2s;
+}
+.animate-pop.delay-2 {
+  animation-delay: 0.4s;
+}
+.animate-pop.delay-3 {
+  animation-delay: 0.6s;
+}
+.animate-pop.delay-4 {
+  animation-delay: 0.8s;
+}
+.animate-pop.delay-5 {
+  animation-delay: 1s;
 }
 
 @keyframes fadeIn {
@@ -149,81 +155,27 @@ body {
   100% { opacity: 1; transform: scale(1); }
 }
 
-/* Collapsible styles */
-.collapsible {
-  user-select: none;
-}
-
-.collapsible-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: var(--blue-light);
-  cursor: pointer;
-  font-weight: 600;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid rgba(255,255,255,0.2);
-}
-
-.arrow {
-  transition: transform 0.3s ease;
-}
-
-.collapsible-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease, padding 0.3s ease;
-  padding-left: 0;
-  font-size: 0.85rem;
-  margin-top: 0.5rem;
-}
-
-.collapsible-content.open {
-  max-height: 500px;
-  padding-left: 1rem;
-}
-
-/* Rotate arrow when open */
-.collapsible-header.active .arrow {
-  transform: rotate(180deg);
-}
-
-/* Main Content */
-.main {
-  flex: 1;
-  padding: 2rem 3rem;
-  overflow-y: auto;
-}
-
-h1, h2, h3 {
-  color: var(--blue);
-}
-
-.card {
-  background: var(--white);
-  padding: 1.5rem;
-  border-radius: 12px;
-  margin-bottom: 2rem;
-  box-shadow: var(--shadow);
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
 /* Responsive */
 @media (max-width: 768px) {
   .dashboard {
     flex-direction: column;
   }
-
   .sidebar {
+    position: relative;
     width: 100%;
-    text-align: center;
+    display: flex;
+    overflow-x: auto;
+    padding: 1rem;
   }
-
+  .menu ul {
+    display: flex;
+    gap: 1rem;
+  }
+  .menu-link {
+    padding: 0.5rem 1rem;
+  }
   .main {
+    margin-left: 0;
     padding: 1.5rem;
   }
 }
